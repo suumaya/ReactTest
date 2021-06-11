@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +20,10 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  ); 
+  // this code is called jsx "javascript xml" 
+  // babel compiler convert this to plain js > 
+  // > to create elements...
 }
 
 export default App;

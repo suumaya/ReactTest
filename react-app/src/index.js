@@ -4,12 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// rendering simple h1 element:
+const element = <h1>here is an element</h1>;
+// console.log(element); // in the virtual dom only :)
+  ReactDOM.render( // render in a real dom
+    element, // what to render?
+    document.getElementById('root') // where to render it? (index.html)
+  ); 
+
+
+// rendering the app root component:
+// ReactDOM.render( 
+//    <React.StrictMode>
+//     <App />
+//   </React.StrictMode>, 
+//   document.getElementById('root') 
+//   ); 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
