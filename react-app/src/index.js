@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 // import App from './App';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css';
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.css";
 // because Counter is default export, we dont need braces around it
-import Counter from './components/counter'; 
+// import Counter from './components/counter';
+
+import Counters from "./components/counters";
 
 // rendering simple h1 element:
 // const element = <h1>here is an element</h1>;
@@ -13,17 +15,17 @@ import Counter from './components/counter';
 //   ReactDOM.render( // render in a real dom
 //     element, // what to render?
 //     document.getElementById('root') // where to render it? (index.html)
-//   ); 
-
+//   );
 
 // rendering the App root component:
 // components as html elements <App/>,<Counter/> ...
-ReactDOM.render( 
-   <React.StrictMode>
-    <Counter />
-   </React.StrictMode>, 
-  document.getElementById('root') 
-  ); 
+ReactDOM.render(
+  <React.StrictMode>
+    {/* <Counter /> */}
+    <Counters />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
